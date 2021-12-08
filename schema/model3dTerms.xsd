@@ -1,0 +1,11 @@
+<xsd:schema targetNamespace="https://schema.khronos.org/model3d/xsd/1.0/terms/" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:model3d="https://schema.khronos.org/model3d/xsd/1.0/">
+    <xsd:annotation>
+        <xsd:documentation>
+            Terms for the Khronos 3D Commerce Model 3D Namespace RDF.
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd"></xsd:import>
+    <xsd:import namespace="https://schema.khronos.org/model3d/xsd/1.0/" schemaLocation="./model3d.xsd" />
+    <xsd:element name="spdxLicense" substitutionGroup="model3d:spdxLicense" />
+    <xsd:element name="preferredSurfaces" substitutionGroup="model3d:preferredSurfaces" />
+</xsd:schema>

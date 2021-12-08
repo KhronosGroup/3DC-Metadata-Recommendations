@@ -1,0 +1,28 @@
+<xsd:schema targetNamespace="https://schema.khronos.org/model3d/xsd/1.0/" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:model3d="https://schema.khronos.org/model3d/xsd/1.0/">
+    <xsd:annotation>
+        <xsd:documentation>
+            XML Schema for the Khronos 3D Commerce Metadata Model3d Namespace
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd"></xsd:import>
+    <xsd:complexType name="SimpleLiteral">
+        <xsd:annotation>
+            <xsd:documentation>
+                This is the default type for all model3d namespace elements.  It permits text content only with optional xml:lang attribute. Text is allowed 
+                because mixed="true", but sub-elements are disallowed because minOccurs="0" and maxOccurs="0" are on the xs:any tag. This complexType 
+                allows for restriction or extension permitting child elements.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexContent mixed="true">
+            <xsd:restriction base="xsd:anyType">
+                <xsd:sequence>
+                    <xsd:any processContents="lax" minOccurs="0" maxOccurs="0"></xsd:any>
+                </xsd:sequence>
+                <xsd:attribute ref="xml:lang" use="optional"></xsd:attribute>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="any" type="model3d:SimpleLiteral" abstract="true" />
+    <xsd:element name="spdxLicense" substitutionGroup="model3d:any"></xsd:element>
+    <xsd:element name="preferredSurfaces" substitutionGroup="model3d:any"></xsd:element>
+</xsd:schema>

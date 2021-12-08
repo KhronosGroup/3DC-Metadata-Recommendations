@@ -1,0 +1,7 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:model3dterms="https://schema.khronos.org/model3d/xsd/1.0/" />
+    <rdf:Description rdf:about="https://schema.khronos.org/model3d/xsd/1.0/">
+        <model3d:spdxLicense xml:lang="en">The SPDX License used to License the asset.</model3d:spdxLicense>
+        <model3d:preferredSurfaces xml:lang="en">An unordered list of surfaces that are acceptable for the asset to be used on. Values should be one or more of "horizontal_up", "horizontal_down", "vertical", or "human_face"</model3d:preferredSurfaces>
+    </rdf:Description>
+</rdf:RDF>
