@@ -8,8 +8,8 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # Recommendations for KHR_xmp_json_ld usage in glTF
 
-_Version 0.1.00_\
-Last Updated: March 1, 2021
+_Version 1.0.00_\
+Last Updated: December 28, 2021
 
 <!-- Start License -->
 
